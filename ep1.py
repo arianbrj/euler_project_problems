@@ -5,4 +5,8 @@ for i in range(n):
 		s += i
 
 print(s)
+#hi im the first problem of the euler series!
+#bye!!
 
+
+# third change!
