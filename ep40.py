@@ -1,4 +1,4 @@
-4##### arian
+##### arian
 
 # 0.1234567891011121314151617181920.....
 # 400 - 9*1 - 90*2 -900*3 
@@ -81,3 +81,6 @@ print(f"Result = {p}")
 
 # تست اضافی
 print(f"ranGSaz(1905) = {ranGSaz(1905)}")
+
+print("here im learning git")
+print("git check success!")
