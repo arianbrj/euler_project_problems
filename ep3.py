@@ -7,16 +7,16 @@ def isprime(x):
         return False
     elif x == 2:
         return True
+    
     elif x != 2 and x % 2 == 0 :
         return False
+    
     else:
         flag = True
-
-        for i in range(3,int(x**.5),2):
+        for i in range(3,int(x**.5)+1,2):
             if x % i == 0:
                 flag = False
                 break
-            # x = q//i
         return flag
     
 def factors(n):
@@ -30,8 +30,11 @@ def factors(n):
         i += 1
     return sorted(factors)
 
+if __name__ == "__main__":
+    big_number_factors = [j for j in factors(number) if isprime(j)]
 
-big_number_factors = [j for j in factors(number) if isprime(j)]
-
-# [71, 839, 1471, 6857]
-print(max(big_number_factors))
+    # [71, 839, 1471, 6857]
+    print(max(big_number_factors))
+    for i in range(50):
+        if isprime(i):
+            print(i)
