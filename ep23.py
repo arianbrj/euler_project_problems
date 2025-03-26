@@ -22,14 +22,16 @@ for i in range(1,28123):
     if i < 24:
         summation += i
         print(i)
+
     else:
         a,b = 0,-1
         flag = True
-        possible_sums = list(range(0,i+1))
+        # possible_sums = list(range(0,i+1))
         # print(i,possible_sums)
-        for j in range(len(possible_sums)//2 +1):
+        for j in range((i+1)//2 +1):
             # print(possible_sums[a],possible_sums[b])
-            if isAboundant(possible_sums[a]) and isAboundant(possible_sums[b]):
+            # if isAboundant(possible_sums[a]) and isAboundant(possible_sums[b]):
+            if isAboundant(j) and isAboundant(i-j):
                 # print(possible_sums[a],possible_sums[b])
                 flag = False
                 break
